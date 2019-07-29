@@ -1,8 +1,9 @@
 import React from "react";
 
-const OperatorButton = (index, item) => {
+const OperatorButton = (item, index) => {
+  console.log(item);
   return (
-    <button key={index}>{item}</button>
+    <button key={item.value}>{item.char}</button>
      // {/* Display a button element rendering the data being passed down from the parent container on props */}
   );
 };
